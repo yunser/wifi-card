@@ -34,24 +34,24 @@ const Card = () => {
       <fieldset id="print-area">
         <legend></legend>
 
-        <h1>WiFi Login</h1>
+        <h1>WiFi 登录</h1>
         <hr/>
 
         <div className="details">
           <QRCode className="qrcode" value={qrvalue} size={175} />
 
           <div className="text">
-            <label>Network name</label>
-            <input id="ssid" type="text" maxLength="32" placeholder="WiFi Network name" value={ssid} onChange={event => setSsid(event.target.value)} />
-            <label>Password</label>
-            <input id="password" type="text" maxLength="64" placeholder="Password" value={password} onChange={event => setPassword(event.target.value)} />
+            <label>WiFi 名称</label>
+            <input id="ssid" type="text" maxLength="32" placeholder="WiFi 名称" value={ssid} onChange={event => setSsid(event.target.value)} />
+            <label>密码</label>
+            <input id="password" type="text" maxLength="64" placeholder="密码" value={password} onChange={event => setPassword(event.target.value)} />
           </div>
         </div>
 
-        <p><span role="img" aria-label="mobile-phone">📸📱</span>Point your phone's camera at the QR Code to connect automatically</p>
+        <p><span role="img" aria-label="mobile-phone">📸📱</span>将手机的摄像头对准二维码，扫码后即可自动连接 Wi-Fi</p>
       </fieldset>
       <div className="print-btn">
-        <button onClick={window.print}>Print</button>
+        <button onClick={window.print}>打印</button>
       </div>
     </div>
   )

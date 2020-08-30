@@ -8,3 +8,8 @@ fieldset {
   border-style: dashed;
   border-color: #aaa;
 }
+.help {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
